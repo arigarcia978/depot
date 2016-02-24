@@ -1,1 +1,0 @@
-if($('#cart tr'). length == 0) { $('#cart').show('blind', 1000); console.log('muak'); }
