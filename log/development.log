@@ -37840,3 +37840,101 @@ Started GET "/assets/perro-31154bd995979426aad5585ee53a193d814ab6e1e5c1ecb0a7e94
 
 
 Started GET "/assets/computadora-54f124c86e37bd460ff228a869a43cc4b53eaec79d23967b46c25e35388f5564.jpg" for 127.0.0.1 at 2016-02-24 13:42:13 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-24 14:14:31 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StoreController#index as HTML
+  [1m[35mCart Load (0.4ms)[0m  SELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 56]]
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."updated_at" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"  ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (379.1ms)
+  [1m[36mLineItem Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 56]]
+  [1m[35mLineItem Load (0.4ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?  [["cart_id", 56]]
+  Rendered collection (0.0ms)
+  Rendered carts/_cart.html.erb (7.2ms)
+Completed 200 OK in 675ms (Views: 624.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-24 14:14:32 -0300
+
+
+Started GET "/assets/carts.self-41539504476ab990988fb7d817e5c1bc106eeea4a1d4c554c47971bcc135b6fa.css?body=1" for 127.0.0.1 at 2016-02-24 14:14:32 -0300
+
+
+Started GET "/assets/line_items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-24 14:14:32 -0300
+
+
+Started GET "/assets/products.self-be5a04dbaaac5035da2b60fa257044327702bf4ba869dc113df91c8ca7ed1be3.css?body=1" for 127.0.0.1 at 2016-02-24 14:14:32 -0300
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-24 14:14:32 -0300
+
+
+Started GET "/assets/scaffolds.self-3a7473834b764c6a9279dddd87d057773a3ace8426e60c338cd154860a824a9a.css?body=1" for 127.0.0.1 at 2016-02-24 14:14:32 -0300
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-24 14:14:32 -0300
+
+
+Started GET "/assets/store.self-a1e529a1cc2199bff9801aeb1384c2183388ed453dfbcc1b651ee88f0107f5c7.css?body=1" for 127.0.0.1 at 2016-02-24 14:14:32 -0300
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-02-24 14:14:32 -0300
+
+
+Started GET "/assets/application.self-92fab938b7592412da4239b1c4947ec0c6c9cee09f83889fb218bd4ac6304f65.css?body=1" for 127.0.0.1 at 2016-02-24 14:14:32 -0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-02-24 14:14:32 -0300
+
+
+Started GET "/assets/jquery-ui/effect.self-3acdb29e7da09c8f0195b994d2f04d73bfef50dc539c84fd2c835d964d33e5c1.js?body=1" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/jquery-ui/effect-blind.self-ed102209d7aa0b7374f3db8478cc7dcff5f9980d3146e8bf9fbfab959c6d5d8a.js?body=1" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/line_items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/store.self-96975c7d1451f7d10f5acc29f3a031caeba88ecdbc6dc1093230408cdf9106ee.js?body=1" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/logo-646540c5cefcd73d2ad1c412628aec15ae64092710e4cbe19464934cfac25d49.jpg" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/computadora-54f124c86e37bd460ff228a869a43cc4b53eaec79d23967b46c25e35388f5564.jpg" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/mochila-98e4fec2f623373128388123fb190a7e84623cc6bd7251b9cad4a1ad3853790d.jpg" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
+
+
+Started GET "/assets/perro-31154bd995979426aad5585ee53a193d814ab6e1e5c1ecb0a7e94211b2adc061.png" for 127.0.0.1 at 2016-02-24 14:14:33 -0300
