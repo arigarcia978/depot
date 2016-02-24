@@ -51,3 +51,4 @@ group :development do
   end
 end
 
+ruby 4.2.5.1

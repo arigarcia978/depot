@@ -49,6 +49,5 @@ group :development do
   group :production do
     gem 'pg'
   end
-end
-
 ruby 4.2.5.1
+end
