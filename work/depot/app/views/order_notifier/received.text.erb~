@@ -1,0 +1,10 @@
+Dear <%= @order.name %>
+Thank you for your recent order from The Pragmatic Store.
+You ordered the following items:
+Tamaño del arreglo: <%= @order.line_items.size %>
+<%= @order.line_items.each do |item| %>
+  <%= sprintf("%2d x %s", item.quantity, 
+    truncate(item.product.title, length: 50)) %>
+<% end %>
+
+We'll send you a separate e-mail when your order ships.
