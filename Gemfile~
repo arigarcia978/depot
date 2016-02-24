@@ -49,5 +49,5 @@ group :development do
   group :production do
     gem 'pg'
   end
-ruby "2.3"
+ruby "2.2"
 end
