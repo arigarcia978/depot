@@ -1,0 +1,13 @@
+I"/(function() {
+  $(document).on("ready page:change", function() {
+    var hideCart;
+    $('.store .entry > img').click(function() {
+      return $(this).parent().find(':submit').click();
+    });
+    return hideCart = function() {
+      return $('#cart').hide('blind', 1000);
+    };
+  });
+
+}).call(this);
+:ET

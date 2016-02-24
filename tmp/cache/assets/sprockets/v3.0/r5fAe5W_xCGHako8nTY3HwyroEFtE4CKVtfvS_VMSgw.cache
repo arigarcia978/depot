@@ -1,0 +1,15 @@
+I"h(function() {
+  $(document).on("ready page:change", function() {
+    $('.store .entry > img').click(function() {
+      return $(this).parent().find(':submit').click();
+    });
+    if (this.cart.line_items.empty != null) {
+      hideCart();
+    }
+    return this.hideCart = function() {
+      return $('#cart').hide('blind', 1000);
+    };
+  });
+
+}).call(this);
+:ET

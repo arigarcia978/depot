@@ -1,0 +1,14 @@
+I"W(function() {
+  $(document).on("ready page:change", function() {
+    $('.store .entry > img').click(function() {
+      return $(this).parent().find(':submit').click();
+    });
+    return this.hideCart = function() {
+      if ('#cart'.hasClass('cartVacia')) {
+        return $('#cart').hide('blind', 1000);
+      }
+    };
+  });
+
+}).call(this);
+:ET

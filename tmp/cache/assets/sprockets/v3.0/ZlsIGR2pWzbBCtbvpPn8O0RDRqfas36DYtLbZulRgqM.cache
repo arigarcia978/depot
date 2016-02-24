@@ -1,0 +1,15 @@
+I")(function() {
+  var hideCart;
+
+  $(document).on("ready page:change", function() {
+    return $('.store .entry > img').click(function() {
+      return $(this).parent().find(':submit').click();
+    });
+  });
+
+  hideCart = function() {
+    return $('#cart').hide('blind', 1000);
+  };
+
+}).call(this);
+:ET
